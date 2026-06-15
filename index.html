@@ -26,7 +26,6 @@
       <a href="#generators">Generatory</a>
       <a href="#people">Osoby i role</a>
       <a href="#jw">Import programu z JW</a>
-      <a href="#planning">Planowanie</a>
       <a href="#center">Centrum projektów</a>
       <a href="#files">Pliki i eksport</a>
       <a href="#settings">Ustawienia</a>
@@ -85,7 +84,7 @@
         <article class="card"><div class="card-icon">02</div><h3>Sprzątanie, nagłośnienie i porządkowi</h3><p>Łączy tygodniowy plan sprzątania, konsolę, mikrofony oraz służbę porządkową. Po wyborze grupy może automatycznie ustawić grupowego do sprzątania.</p></article>
         <article class="card"><div class="card-icon">03</div><h3>Plan zebrań w tygodniu</h3><p>Edytuj sekcje i punkty programu, uczestników, role, wydarzenia specjalne oraz importuj program tygodnia z JW. Numeracja punktów powstaje automatycznie.</p></article>
         <article class="card"><div class="card-icon">04</div><h3>Plan grup służby</h3><p>Zarządzaj dowolną liczbą grup, członkami, grupowymi i asystentami. Plan jest trwały i każda zmiana zapisuje się automatycznie.</p></article>
-        <article class="card"><div class="card-icon">05</div><h3>Zbiórki do służby</h3><p>Edytuj tytuł, okres, nagłówki, kolory, terminy, miejsca i prowadzących. Asystent może wygenerować daty i równomiernie przydzielić osoby.</p></article>
+        <article class="card"><div class="card-icon">05</div><h3>Zbiórki do służby</h3><p>Edytuj tytuł, okres, nagłówki, kolory, terminy, miejsca i prowadzących.</p></article>
       </div>
     </section>
 
@@ -98,18 +97,17 @@
       <table class="role-table">
         <thead><tr><th>Uprawnienie</th><th>Gdzie jest używane</th></tr></thead>
         <tbody>
-          <tr><td>Prowadzenie zbiórki do służby</td><td>Prowadzący w generatorze zbiórek oraz Asystent planowania.</td></tr>
+          <tr><td>Prowadzenie zbiórki do służby</td><td>Prowadzący w generatorze zbiórek. Przydział nie wywołuje kolizji.</td></tr>
           <tr><td>Obsługa konsoli / Zoom</td><td>Konsola w planie sprzątania i nagłośnienia.</td></tr>
           <tr><td>Obsługa mikrofonu</td><td>Oba pola mikrofonów.</td></tr>
           <tr><td>Służba porządkowa</td><td>Porządkowy hol i porządkowy sala.</td></tr>
-          <tr><td>Sprzątanie sali</td><td>Osoba odpowiedzialna za sprzątanie.</td></tr>
           <tr><td>Przewodniczenie zebraniu</td><td>Przewodniczący zebrania weekendowego i w tygodniu.</td></tr>
           <tr><td>Wykład publiczny</td><td>Wykładowca.</td></tr>
           <tr><td>Prowadzenie Studium Strażnicy</td><td>Prowadzący Studium Strażnicy.</td></tr>
-          <tr><td>Czytanie / lektor</td><td>Lektor w pozostałych generatorach i punktach.</td></tr>
-          <tr><td>Punkty ćwiczebne</td><td>Cała część „Ulepszajmy swoją służbę” oraz „Czytanie Biblii”.</td></tr>
+          <tr><td>Lektor</td><td>Lektor w pozostałych generatorach i punktach.</td></tr>
+          <tr><td>Punkty ćwiczebne</td><td>Wspólna kategoria punktów ćwiczebnych.</td></tr>
           <tr><td>Zebranie w tygodniu — pozostałe punkty</td><td>Punkty poza częścią ćwiczebną i czytaniem Biblii.</td></tr>
-          <tr><td>Modlitwa na zebraniu</td><td>Modlitwa początkowa, końcowa i punkty opisane jako modlitwa.</td></tr>
+          <tr><td>Modlitwa na zebraniu</td><td>Modlitwa początkowa, końcowa i punkty opisane jako modlitwa. Nie wywołuje kolizji.</td></tr>
         </tbody>
       </table>
       <div class="grid" style="margin-top:1rem">
@@ -136,23 +134,13 @@
       <div class="callout warning"><strong>Gdy strona JW odpowiada wolniej</strong>Odczekaj chwilę i spróbuj ponownie. Możesz też użyć lokalnego przycisku „Szablon punktów”, który nie wymaga internetu.</div>
     </section>
 
-    <section id="planning" class="searchable">
-      <div class="eyebrow">Asystent planowania</div>
-      <h2>Szybsze przygotowanie wielu terminów</h2>
-      <div class="grid three">
-        <article class="card"><h3>Automatyczne daty</h3><p>Wybierz zakres oraz dowolną kombinację dni tygodnia. Planora utworzy wszystkie pasujące terminy.</p></article>
-        <article class="card"><h3>Równy podział</h3><p>Asystent może rozdzielać obowiązki równomiernie i unikać tej samej osoby dwa razy z rzędu.</p></article>
-        <article class="card"><h3>Masowa edycja</h3><p>Przesuwaj wiele dat jednocześnie oraz ustawiaj wspólną godzinę i miejsce dla zaznaczonych terminów.</p></article>
-      </div>
-    </section>
-
     <section id="center" class="searchable">
       <div class="eyebrow">Centrum projektów</div>
       <h2>Wspólny obraz wszystkich obowiązków</h2>
       <div class="grid">
         <article class="card"><h3>Centralny kalendarz</h3><p>Pokazuje obowiązki ze wszystkich ostatnio edytowanych projektów i pozwala wrócić do wybranego projektu.</p></article>
         <article class="card"><h3>Nadchodzące obowiązki</h3><p>Wyświetla przydziały z najbliższych 7, 14, 30 lub 90 dni.</p></article>
-        <article class="card"><h3>Globalne kolizje</h3><p>Wykrywa sytuacje, gdy ta sama osoba ma kilka obowiązków tego samego dnia, także w różnych projektach.</p></article>
+        <article class="card"><h3>Globalne kolizje</h3><p>Wykrywa podwójne obowiązki także między projektami. Sprzątanie sali, modlitwy i prowadzenie zbiórki nie wywołują kolizji.</p></article>
         <article class="card"><h3>Indywidualny plan osoby</h3><p>Eksportuj TXT lub ICS, skopiuj gotową wiadomość albo otwórz ją w programie pocztowym.</p></article>
         <article class="card"><h3>Statystyki</h3><p>Porównaj liczbę przydziałów i sprawdź, czy obowiązki są rozdzielone równomiernie.</p></article>
         <article class="card"><h3>Drukowanie zbiorcze</h3><p>Zaznacz wiele projektów i wyślij wszystkie ich strony do drukarki jako jedno zadanie.</p></article>
